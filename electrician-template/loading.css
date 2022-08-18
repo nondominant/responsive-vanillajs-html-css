@@ -1,0 +1,6 @@
+.loading {
+}
+.loading:before {
+  color: white;
+  content: 'LOADING...';
+}

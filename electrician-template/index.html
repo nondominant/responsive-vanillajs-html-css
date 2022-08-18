@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Plumbing</title>
+<meta charset="UTF-8">
+<meta name="homepage" content="electrician.com">
+<link rel="stylesheet" href="./style.css"/>
+<link rel="stylesheet" href="./button.css"/>
+<link rel="stylesheet" href="./loading.css"/>
+<script src='https://cdn.polyfill.io/v2/polyfill.js?features=IntersectionObserver'></script>
+<script src="main.js"></script>
+<script src="loading.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<!-- Navigation Bar -->
+<div class="navbar"  >
+  <a href="./about.html">About</a>
+  <a href="./contact.html">Contact</a>
+  <a href="./index.html">Home</a>
+</div>
+<!-- Header -->
+<div class="header">
+<video poster="https://s3-us-west-2.amazonaws.com/s.cdpn.io/4273/polina.jpg" id="bgvid" playsinline autoplay muted loop>
+  <!-- 
+- Video needs to be muted, since Chrome 66+ will not autoplay video with sound.
+WCAG general accessibility recommendation is that media such as background video play through only once. Loop turned on for the purposes of illustration; if removed, the end of the video will fade in the same way created by pressing the "Pause" button  -->
+<source src="http://thenewcode.com/assets/videos/polina.webm" type="video/webm">
+<source src="http://thenewcode.com/assets/videos/polina.mp4" type="video/mp4">
+</video>
+</div>
+
+
+<!-- The flexible grid (content) -->
+<div class="row"  >
+  <div class="side">
+    <h2>About Me</h2>
+    <h5>Photo of me:</h5>
+    <div class="display">
+    </div>
+    <div>
+      <button onclick="press()">Press</button>
+    </div>
+    <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    <h3>More Text</h3>
+    <p>Lorem ipsum dolor sit ame.</p>
+    <div class="fakeimg"  style="min-height:60px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <div >
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+      </div>
+    </div>
+      <div >
+    <div class="fakeimg"  style="min-height:60px;">
+    </div>
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+    <div class="fakeimg"  style="min-height:60px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+    <div class="fakeimg"  style="min-height:60px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+    <div class="fakeimg"  style="min-height:60px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+    <div class="fakeimg"  style="min-height:60px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+    <div class="fakeimg"  style="min-height:60px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+  </div>
+  <div class="main item">
+    <h2>Placehoder</h2>
+    <h5>An image that is only 2 x 2 pixels, Dec 7, 2017</h5>
+    <div class="fakeimg"  style="min-height:200px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <br>
+    <h2>TITLE HEADING</h2>
+    <h5>Title description, Sep 2, 2017</h5>
+    <div class="fakeimg"  style="min-height:200px;">
+      <noscript>
+      <img src="./img/b.webp"/>
+      </noscript>
+      <img class="lazy" data-src="./img/guy.webp" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACCAIAAAD91JpzAAAAFklEQVR4nGP8//8/AwMDEwMDAwMDAwAkBgMB/DXemwAAAABJRU5ErkJggg=="/>
+    </div>
+    <p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  </div>
+</div>
+
+<!-- Footer -->
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+<noscript>
+  <style>.lazy { display: none; }</style>
+</noscript>
+</body>
+</html>

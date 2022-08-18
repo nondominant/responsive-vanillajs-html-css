@@ -1,0 +1,18 @@
+[data-pickzone] {
+}
+[data-dropzone] {
+}
+.item {
+  touch-action: none;
+}
+.item.dragging {
+  position: absolute;
+  transform: rotate(-2deg);
+}
+
+.item.clone {
+  background: white;
+  border: solid white 2px;
+}
+
+
